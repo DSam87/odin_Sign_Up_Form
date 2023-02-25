@@ -93,21 +93,85 @@ body {
   justify-content: center;
 }
 .rightside-form {
-  height: 33.3%;
+  height: 30.3%;
   width: 100%;
   background-color: #fff;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.116);
   position: relative;
   z-index: 10;
 }
 
 .rightside-foot {
-  height: 33.3%;
+  height: 36.3%;
   width: 100%;
   background-color: #f8f8f8;
 }
 
 .rightside-description-bottom p:only-child {
   margin-top: 15px;
+}
+
+label {
+  color: rgba(0, 0, 0, 0.692);
+  font-weight: 600;
+  font-size: 400;
+  letter-spacing: 1.5px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container,
+.rightside-form-title {
+  margin-left: 50px;
+}
+
+.rightside-form-form-row {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  margin: 10px 0;
+}
+.rightside-form-form-row label {
+  display: block;
+}
+
+.form-input {
+  margin-right: 70px;
+}
+
+input {
+  margin: 2px 0;
+  padding: 7px 23px;
+  border: rgba(0, 0, 0, 0.103) solid 1px;
+  border-radius: 7px;
+}
+
+.rightside-foot {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightside-foot-btn {
+  display: block;
+  padding: 13px 60px;
+  width: 250px;
+  margin-top: 50px;
+  margin-left: 45px;
+  background-color: rgb(75, 116, 75);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.rightside-foot p {
+  font-size: medium;
+  margin-top: 30px;
+  margin-left: 45px;
 }
